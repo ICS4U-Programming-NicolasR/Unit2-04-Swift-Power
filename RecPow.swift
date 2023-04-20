@@ -23,14 +23,14 @@ let inputFilePath = "input.txt"
 let outputFilePath = "output.txt"
 
 // Read input from file
-if let inputString = try? String(contentsOfFile: inputFilePath){
+if let inputString = try? String(contentsOfFile: inputFilePath) {
         // Separate the input into lines
         let inputLines = inputString.components(separatedBy: .newlines)
 
         // Calculate any power for each line and append to answers array
         var answers = [String]()
         for line in inputLines {
-            let lineNumbers = line.components(separatedBy: " ").compactMap{ Int($0)}
+            let lineNumbers = line.components(separatedBy: " ").compactMap { Int($0)}
             let result = recPow(lineNumbers[0], lineNumbers[1])
             let resultString = "\(lineNumbers[0]) ^ \(lineNumbers[1]) = \(result)"
             answers.append(resultString)
