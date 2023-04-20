@@ -13,8 +13,9 @@ import Foundation
 func recPow(_ base: Int, _ exp: Int) -> Int {
     if exp == 0 {
         return 1
+    } else {
+        return recPow(base, exp - 1) * base
     }
-    return recPow(base, exp - 1) * base
 }
 
 // Define input and output file paths
