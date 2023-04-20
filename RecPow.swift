@@ -10,7 +10,7 @@
 import Foundation
 
 // Define a function to find any number to any power
-func recPow(_ base: Int,_ exp: Int) -> Int {
+func recPow(_ base: Int, _ exp: Int) -> Int {
     if exp == 0 {
         return 1
     }
