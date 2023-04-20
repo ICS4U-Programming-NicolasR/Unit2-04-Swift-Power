@@ -23,7 +23,7 @@ let inputFilePath = "input.txt"
 let outputFilePath = "output.txt"
 
 // Read input from file
-if let inputString = try? String(contentsOfFile: inputFilePath) {
+if let inputString = try? String(contentsOfFile: inputFilePath){
         // Separate the input into lines
         let inputLines = inputString.components(separatedBy: .newlines)
 
